@@ -1,10 +1,11 @@
-# `(import (letloop template))`
+# `(import (letloop byter))`
 
-Abstract description...
+Export two procedures that pack lexicographically Scheme types.
 
-## `(procedure one two)` `type?` `type?` → `type?`
+### `(byter-pack . args)` → `bytevector?`
 
-Description...
+### `(byter-unpack bytevector)`
 
+### `(byter-next-prefix bytervector)` → `bytevector?`
 
-
+Returns the first bigger bytevector that is not prefix of `BYTEVECTOR`.
